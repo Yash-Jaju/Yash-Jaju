@@ -1,4 +1,6 @@
 ### Hi there 👋
+Its a tuition management software where you can add a student deatails, remove a student record from database, mark and check attendance, Check the fee structure as well as keeping the track of fee paid by a particular stdent, also you can check the details of a student and also edit them. The most important thing which a student needs to do in this is that to remember his registration number, each and everything related to him can only be accessed through his registration number. 
+A student gets to know his registration number as we enter his/her details in the "Add Student" section and press "Insert Record" the program will say his/her registration number. Also when you pay a certain amount of fees the program will say aloud the amount of fee paid.
 
 <!--
 **Yash-Jaju/Yash-Jaju** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
