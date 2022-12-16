@@ -18,7 +18,7 @@ def speak(audio):
 
 # Connection with database
 db = mysql.connector.connect(
-    host="localhost", user="root", password="yash2003")
+    host="localhost", user="root", password="********")
 if db.is_connected() == False:
     print('error connecting to MYSQL database')
 cursor = db.cursor()
@@ -29,7 +29,7 @@ cursor.execute("USE project")
 # Setting up root
 root = Tk()
 root.title("Achiever's Club")
-root.iconbitmap(r"E:\Programming\Python Projects\Project\Image\achievers_club.ico")
+root.iconbitmap(r"#Location of theimage of icon")
 root.geometry("400x500")
 
 
@@ -82,7 +82,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS ATTENDANCE_DETAILS(
 def add_in_database():
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -319,7 +319,7 @@ def add_in_database():
 def remove_from_database():
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -338,7 +338,7 @@ def remove_from_database():
 # Updating Fee_details Table
 def updating_fee():
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -390,7 +390,7 @@ def fee_data():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -441,7 +441,7 @@ def attendance_1(reg_no):
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -466,7 +466,7 @@ def attendance_2(reg_no_index):
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -499,7 +499,7 @@ def adding_date_column():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -536,7 +536,7 @@ def check_attendance_from_database():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -565,7 +565,7 @@ def check_profile_from_database():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -629,7 +629,7 @@ def check_profile_from_database():
 def edit_profile_in_database():
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -828,7 +828,7 @@ def show_profile_from_database():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -892,7 +892,7 @@ def add_student():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
 
@@ -910,7 +910,7 @@ def add_student():
     # Creating New Window
     add_student_window = Tk()
     add_student_window.title("Add Student")
-    add_student_window.iconbitmap(r"E:\Programming\Python Projects\Project\Image\achievers_club.ico")
+    add_student_window.iconbitmap(r"#Location of theimage of icon")
     add_student_window.geometry("225x225")
 
     # Creating and Placing Entry Box Labels
@@ -962,14 +962,14 @@ def remove_student():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
 
     # Creating New Window
     remove_student_window = Tk()
     remove_student_window.title("Remove Student")
-    remove_student_window.iconbitmap(r"E:\Programming\Python Projects\Project\Image\achievers_club.ico")
+    remove_student_window.iconbitmap(r"#Location of theimage of icon")
     remove_student_window.geometry("175x50")
 
     reg_no_delete_entry = Entry(remove_student_window)
@@ -992,14 +992,14 @@ def pay_fee():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
 
     # Creating New Window
     pay_fee_window = Tk()
     pay_fee_window.title("Pay Fee")
-    pay_fee_window.iconbitmap(r"E:\Programming\Python Projects\Project\Image\achievers_club.ico")
+    pay_fee_window.iconbitmap(r"#Location of theimage of icon")
     pay_fee_window.geometry("225x200")
 
     pay_fee_reg_no = Entry(pay_fee_window)
@@ -1019,7 +1019,7 @@ def check_fee_structure():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
     cursor = db.cursor()
@@ -1027,7 +1027,7 @@ def check_fee_structure():
     # Creating New Window
     fee_structure_window = Tk()
     fee_structure_window.title("Fee Student")
-    fee_structure_window.iconbitmap(r"E:\Programming\Python Projects\Project\Image\achievers_club.ico")
+    fee_structure_window.iconbitmap(r"#Location of theimage of icon")
     fee_structure_window.geometry("200x240")
 
     cursor.execute("""CREATE TABLE IF NOT EXISTS FEE_STRUCTURE(
@@ -1140,14 +1140,14 @@ def mark_attendance():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
 
     # Creating New Window
     mark_attendance_window = Tk()
     mark_attendance_window.title("Mark Attendance")
-    mark_attendance_window.iconbitmap(r"E:\Programming\Python Projects\Project\Image\achievers_club.ico")
+    mark_attendance_window.iconbitmap(r"#Location of theimage of icon")
     mark_attendance_window.geometry("200x100")
 
     Label(mark_attendance_window, text="ENTER DATE").grid(row=0, column=0)
@@ -1171,14 +1171,14 @@ def check_attendance():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
 
     # Creating New Window
     check_attendance_window = Tk()
     check_attendance_window.title("Check Attendance")
-    check_attendance_window.iconbitmap(r"E:\Programming\Python Projects\Project\Image\achievers_club.ico")
+    check_attendance_window.iconbitmap(r"#Location of theimage of icon")
     check_attendance_window.geometry("200x125")
 
     Label(check_attendance_window, text="Reg. No").grid(row=0, column=0)
@@ -1204,14 +1204,14 @@ def check_profile():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
 
     # Creating New Window
     check_student_window = Tk()
     check_student_window.title("Check Profile")
-    check_student_window.iconbitmap(r"E:\Programming\Python Projects\Project\Image\achievers_club.ico")
+    check_student_window.iconbitmap(r"#Location of theimage of icon")
     check_student_window.geometry("225x270")
 
     check_profile_reg_no = Entry(check_student_window)
@@ -1234,14 +1234,14 @@ def edit_proflie():
 
     # Connection with database
     db = mysql.connector.connect(
-        host="localhost", user="root", password="yash2003", database="project")
+        host="localhost", user="root", password="********", database="project")
     if db.is_connected() == False:
         print('error connecting to MYSQL database')
 
     # Creating New Window
     edit_student_window = Tk()
     edit_student_window.title("Edit Profile")
-    edit_student_window.iconbitmap(r"E:\Programming\Python Projects\Project\Image\achievers_club.ico")
+    edit_student_window.iconbitmap(r"#Location of theimage of icon")
     edit_student_window.geometry("225x270")
 
     edit_profile_reg_no = Entry(edit_student_window)
